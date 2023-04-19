@@ -10,6 +10,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   node_resource_group              = var.node_resource_group
   enable_pod_security_policy       = var.enable_pod_security_policy
   oidc_issuer_enabled              = var.oidc_issuer_enabled
+  workload_identity_enabled        = var.workload_identity_enabled
   http_application_routing_enabled = var.http_application_routing_enabled
 
   private_cluster_enabled = var.private_cluster_enabled

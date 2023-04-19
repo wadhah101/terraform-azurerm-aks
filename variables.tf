@@ -58,6 +58,12 @@ variable "oidc_issuer_enabled" {
   default     = false
 }
 
+variable "workload_identity_enabled" {
+  description = "Enable workload identity or not. https://learn.microsoft.com/en-us/azure/aks/workload-identity-overview"
+  type        = bool
+  default     = false
+}
+
 variable "http_application_routing_enabled" {
   description = "Whether HTTP Application Routing is enabled."
   type        = bool
